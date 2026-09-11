@@ -1,0 +1,95 @@
+{
+  "id": "ashalon-flameborn",
+  "title": "Ashalon: Flameborn Heritage",
+  "description": "The Flameborn human heritage, 17 ancestry feats, native PF2e effects, transformation controls, and optional JB2A animations.",
+  "version": "1.0.0",
+  "authors": [
+    {
+      "name": "Ashalon Homebrew"
+    }
+  ],
+  "compatibility": {
+    "minimum": "14",
+    "verified": "14.364",
+    "maximum": "14"
+  },
+  "relationships": {
+    "systems": [
+      {
+        "id": "pf2e",
+        "type": "system",
+        "compatibility": {
+          "minimum": "8.5.0",
+          "verified": "8.5.0"
+        }
+      }
+    ],
+    "requires": [
+      {
+        "id": "lib-wrapper",
+        "type": "module"
+      }
+    ],
+    "recommends": [
+      {
+        "id": "sequencer",
+        "type": "module"
+      }
+    ]
+  },
+  "esmodules": [
+    "scripts/module.mjs"
+  ],
+  "styles": [
+    "styles/flameborn.css"
+  ],
+  "packs": [
+    {
+      "name": "heritage-feats",
+      "label": "Flameborn: Heritage & Feats",
+      "path": "packs/heritage-feats",
+      "type": "Item",
+      "system": "pf2e",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
+    },
+    {
+      "name": "effects",
+      "label": "Flameborn: Effects",
+      "path": "packs/effects",
+      "type": "Item",
+      "system": "pf2e",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
+    },
+    {
+      "name": "macros",
+      "label": "Flameborn: Controls",
+      "path": "packs/macros",
+      "type": "Macro",
+      "system": "pf2e",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
+    }
+  ],
+  "packFolders": [
+    {
+      "name": "Ashalon: Flameborn",
+      "sorting": "m",
+      "packs": [
+        "heritage-feats",
+        "effects",
+        "macros"
+      ]
+    }
+  ],
+  "readme": "README.md",
+  "manifest": "https://raw.githubusercontent.com/MrVazir/repo2/ashalon-flameborn/ashalon-flameborn/module.json",
+  "download": "https://raw.githubusercontent.com/MrVazir/repo2/ashalon-flameborn/ashalon-flameborn/ashalon-flameborn-v1.0.0.zip"
+}
